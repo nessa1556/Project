@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Gaming Dojo</title>
+  </head>
+  <body>
+    <div class="topbar__line"></div>
+    <nav class="navbar">
+      <div class="container">
+        <a class="navbar__logo" href="#">Gaming<span>Dojo</span> </a>
+
+        <div class="navbar__right">
+          <select class="navbar__currency" name="currency" id="currency">
+            <option value="Euro">Euro</option>
+            <option value="USD">USD</option>
+            <option value="GBP">GBP</option>
+          </select>
+
+          <div class="navbar__cart">
+            <img src="./images/cart-light.png" alt="cart-light" />
+            <span id="cart_number">0</span>
+          </div>
+
+          <button class="navbar__search">
+            <img src="./images/search-light.png" alt="search-light" />
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <header class="header">
+      <div class="container">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="image__banner">
+                <img src="./images/stonepunk.png" alt="stonepunk" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="image__banner">
+                <img src="./images/pixel-ninjas-2.png" alt="stonepunk" />
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </header>
+
+    <section class="product__cards">
+      <div class="container">
+        <div class="product__card">
+          <div class="product__card-image">
+            <img src="./images/cafe-neko.png" alt="cafe-neko" />
+          </div>
+
+          <div class="product__card-content">
+            <h2>Cafe Neko: Special Edition</h2>
+            <div class="product__card-supports">
+              <button>
+                <img src="/images/windows.png" alt="window" />
+              </button>
+              <button>
+                <img src="/images/apple.png" alt="apple" />
+              </button>
+            </div>
+
+            <div class="product__details">
+              <div class="product__details-sale">-20%</div>
+              <div class="product__details-price">
+                <del>€14.19</del>
+                <span>€10.49</span>
+              </div>
+              <button class="product__atc product__details-atc">Buy</button>
+            </div>
+          </div>
+        </div>
+        <div class="product__card">
+          <div class="product__card-image">
+            <img src="./images/pixel-ninjas-2.png" alt="pixel-ninjas-2" />
+          </div>
+
+          <div class="product__card-content">
+            <h2>Pixel Ninjas 2</h2>
+            <div class="product__card-supports">
+              <button>
+                <img src="/images/windows.png" alt="window" />
+              </button>
+              <button>
+                <img src="/images/apple.png" alt="apple" />
+              </button>
+            </div>
+
+            <div class="product__details">
+              <div class="product__details-sale">-10%</div>
+              <div class="product__details-price">
+                <del>€8.19</del>
+                <span>€7.39</span>
+              </div>
+              <button class="product__atc product__details-atc">Buy</button>
+            </div>
+          </div>
+        </div>
+        <div class="product__card">
+          <div class="product__card-image">
+            <img src="./images/stonepunk.png" alt="stonepunk" />
+          </div>
+
+          <div class="product__card-content">
+            <h2>Stonepunk 10000 BCE</h2>
+            <div class="product__card-supports">
+              <button>
+                <img src="/images/windows.png" alt="window" />
+              </button>
+              <button>
+                <img src="/images/apple.png" alt="apple" />
+              </button>
+              <button class="showLinuxSupport">
+                <img src="/images/linux.png" alt="linux" />
+              </button>
+            </div>
+
+            <div class="product__details">
+              <div class="product__details-sale">-20%</div>
+              <div class="product__details-price">
+                <span>€19.99</span>
+              </div>
+              <button class="product__atc product__details-atc">Buy</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">Made with love by Vanessa</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/script.js"></script>
+  </body>
+</html>

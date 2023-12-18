@@ -1,0 +1,248 @@
+html {
+  font-size: 100%;
+}
+
+/* Reset */
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Utilities */
+
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+.default-shadow {
+  box-shadow: 0px 1px 3px 0px #d2d2d2;
+}
+
+body {
+  position: relative;
+  font-family: "Lato", sans-serif;
+}
+
+/* Topbar Line */
+.topbar__line {
+  width: 100%;
+  height: 5px;
+  background: #800080;
+}
+
+/* Navbar */
+.navbar {
+  padding-block: 1rem;
+  background: #000000;
+  color: #ffffff;
+}
+
+.navbar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar__logo {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.navbar__logo span {
+  color: #800080;
+}
+
+.navbar__right {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.navbar__currency {
+  outline: none;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.navbar__cart {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.navbar__cart img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.navbar__cart span {
+  display: block;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.navbar__search {
+  display: flex;
+  width: 2rem;
+  height: 2rem;
+  outline: none;
+  border: none;
+  background: inherit;
+}
+
+.navbar__search img {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+/* Header */
+
+.header {
+  margin: 2rem 0 2rem 0;
+  padding-bottom: 2rem;
+}
+
+.header .container {
+  position: relative;
+}
+
+.image__banner img {
+  max-width: 100%;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.header .swiper {
+  position: static;
+  max-width: 90%;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #800080;
+}
+
+.swiper-pagination {
+  bottom: -40px !important;
+}
+
+.swiper-pagination-bullet {
+  width: 100px;
+  border-radius: 0;
+  margin: 0 10px !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #800080;
+}
+
+/* Product Cards */
+.product__card {
+  box-shadow: 0px 0.0625rem 0.1875rem 0px #d2d2d2;
+  border-radius: 4px;
+}
+
+.product__cards .container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1.5rem;
+  margin-block: 5rem;
+}
+
+.product__card-image img {
+  display: block;
+  max-width: 100%;
+}
+
+.product__card-content {
+  padding: 1rem;
+}
+
+.product__card-content h2 {
+  font-size: 1.5rem;
+  color: #000000;
+  margin-bottom: 1rem;
+}
+
+.product__card-supports {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5px;
+  margin-bottom: 2rem;
+}
+
+.product__card-supports button {
+  display: block;
+  background: none;
+  outline: none;
+  border: none;
+  width: 2rem;
+  height: 2rem;
+}
+
+.product__card-supports button img {
+  display: block;
+  max-width: 100%;
+}
+
+.product__details {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.product__details-sale {
+  background: #800080;
+  color: #ffffff;
+  padding: 10px;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.product__details-price {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+}
+
+.product__details-price del {
+  display: block;
+  opacity: 0.5;
+}
+
+.product__details-price span {
+  font-weight: 900;
+  font-size: 1.25rem;
+}
+
+.product__details-atc {
+  background: rgba(7, 125, 7, 0.681);
+  color: #ffffff;
+  padding: 0.625rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  outline: none;
+  border: none;
+}
+
+/* Footer */
+.footer {
+  padding-block: 2rem;
+  background: #000000;
+  color: #ffffff;
+  text-align: center;
+}
