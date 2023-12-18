@@ -1,3 +1,3 @@
 # Hello World
 
-My first first readme for GitHub
+My first readme for GitHub
